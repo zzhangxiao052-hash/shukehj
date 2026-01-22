@@ -57,6 +57,12 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/6cbadaa3a48d5fbbc580bb797bb936b406dd8c53?width=464",
     },
     {
+      title: "云境Markdown多格式互转软件",
+      url: "https://toolonline.net/",
+      description: "在线Markdown编辑器，支持Markdown与Word、HTML、PDF等多种格式的双向转换",
+      image: "/img/Markdown.png",
+    },
+    {
       title: "奉节一期可视化平台",
       url: "http://123.146.82.142:9000/screen/#/login",
       description: "奉节项目数据可视化展示平台，实时呈现关键业务指标",
@@ -126,7 +132,7 @@ export default function Index() {
           {/* Header */}
           <div className="flex items-center justify-center gap-4 mb-16 mt-8">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/08f6fa9c6346f7834cdf2226e5f49a15983d62ef?width=124"
+              src="/img/logo.png"
               alt="Logo"
               className="w-[62px] h-[62px] drop-shadow-lg"
             />
