@@ -8,11 +8,17 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/78085c6512fc2c439db215551843eddd2d233a00?width=464",
     },
     {
-      title: "AI培训平台",
+      title: "AI培训平台1.0",
       url: "https://www.yunjingai.net/",
       description: "专业的AI技术培训平台，提供系统化的人工智能学习课程",
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/9c633e2e7d4e28cb6a1965485a4c1de2743a69e6?width=464",
+    },
+    {
+      title: "AI培训平台2.0",
+      url: "https://peixun.yunjingai.net/",
+      description: "全新升级的AI培训平台，提供更丰富的课程内容和学习体验",
+      image: "/img/ai培训2.0.png",
     },
     {
       title: "招商平台2.0",
