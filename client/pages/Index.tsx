@@ -49,6 +49,12 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/33d4332b7fccfc2af9edf77ed3d179862ebfb501?width=464",
     },
     {
+      title: "云境妙笔",
+      url: "#",
+      description: "智能写作助手平台，即将上线",
+      image: "/img/placeholder.svg",
+    },
+    {
       title: "云境Markdown多格式互转软件",
       url: "https://toolonline.net/",
       description: "在线Markdown编辑器，支持Markdown与Word、HTML、PDF等多种格式的双向转换",
