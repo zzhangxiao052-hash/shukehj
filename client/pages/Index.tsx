@@ -1,12 +1,13 @@
 export default function Index() {
-  const products = [
-    {
-      title: "公司介绍官网",
-      url: "https://www.treescloud.cn/",
-      description: "树科云境科技官方网站，展示公司业务、产品和服务",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/78085c6512fc2c439db215551843eddd2d233a00?width=464",
-    },
+  const companyPortal = {
+    title: "公司介绍官网",
+    url: "https://www.treescloud.cn/",
+    description: "树科云境科技官方网站，展示公司业务、产品和服务",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/78085c6512fc2c439db215551843eddd2d233a00?width=464",
+  };
+
+  const selfDeveloped = [
     {
       title: "AI培训平台1.0",
       url: "https://www.yunjingai.net/",
@@ -35,13 +36,6 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/972432f0a3731d262f7952dfe2f32e3173949a4d?width=464",
     },
     {
-      title: "双桥招商智能体",
-      url: "http://yl.yinlanco.com/#/",
-      description: "双桥区专属招商智能助手，提供本地化招商服务支持",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/50ce1e44c4edb7641043cad24813d3353def0614?width=464",
-    },
-    {
       title: "智能数据治理平台",
       url: "https://data.yunjingai.net/",
       description: "企业级数据治理解决方案，实现数据资产的统一管理和价值挖掘",
@@ -60,6 +54,16 @@ export default function Index() {
       description: "在线Markdown编辑器，支持Markdown与Word、HTML、PDF等多种格式的双向转换",
       image: "/img/Markdown.png",
     },
+  ];
+
+  const externalProjects = [
+    {
+      title: "双桥招商智能体",
+      url: "http://yl.yinlanco.com/#/",
+      description: "双桥区专属招商智能助手，提供本地化招商服务支持",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/50ce1e44c4edb7641043cad24813d3353def0614?width=464",
+    },
     {
       title: "奉节一期可视化平台",
       url: "http://123.146.82.142:9000/screen/#/login",
@@ -75,9 +79,6 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/9caebdcdcbf70107599064017ff3d9ea6d9815df?width=464",
     },
   ];
-
-  const firstRow = products.slice(0, 2);
-  const rest = products.slice(2);
 
   const Card = ({ product }: { product: any }) => (
     <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-card p-8 flex flex-col sm:flex-row gap-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
@@ -110,6 +111,16 @@ export default function Index() {
     </div>
   );
 
+  const SectionTitle = ({ children }: { children: React.ReactNode }) => (
+    <div className="flex items-center gap-4 mb-8">
+      <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent to-brand-primary/30"></div>
+      <h2 className="text-[24px] font-semibold text-brand-primary whitespace-nowrap">
+        {children}
+      </h2>
+      <div className="h-[2px] flex-1 bg-gradient-to-l from-transparent to-brand-primary/30"></div>
+    </div>
+  );
+
   return (
     <div 
       className="min-h-screen relative"
@@ -139,16 +150,24 @@ export default function Index() {
             </h1>
           </div>
 
-          {/* First Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {firstRow.map((p, i) => (
+          {/* Company Portal */}
+          <SectionTitle>企业门户</SectionTitle>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <Card product={companyPortal} />
+          </div>
+
+          {/* Self-developed Products */}
+          <SectionTitle>自研产品</SectionTitle>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {selfDeveloped.map((p, i) => (
               <Card key={i} product={p} />
             ))}
           </div>
 
-          {/* Remaining Products */}
+          {/* External Projects */}
+          <SectionTitle>外部项目</SectionTitle>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {rest.map((p, i) => (
+            {externalProjects.map((p, i) => (
               <Card key={i} product={p} />
             ))}
           </div>
