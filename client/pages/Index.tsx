@@ -15,13 +15,6 @@ export default function Index() {
         "https://api.builder.io/api/v1/image/assets/TEMP/9c633e2e7d4e28cb6a1965485a4c1de2743a69e6?width=464",
     },
     {
-      title: "智能招商平台1.0",
-      url: "https://zsv1.yunjingai.net/",
-      description: "智能化招商引资平台，助力企业精准对接优质项目",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/6201ec4fbd2235e67b1d88b81c4885d949cf66ca?width=464",
-    },
-    {
       title: "招商平台2.0",
       url: "https://zsv2.yunjingai.net/",
       description: "全新升级的智能招商系统，提供更强大的数据分析和匹配能力",
@@ -48,13 +41,6 @@ export default function Index() {
       description: "企业级数据治理解决方案，实现数据资产的统一管理和价值挖掘",
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/33d4332b7fccfc2af9edf77ed3d179862ebfb501?width=464",
-    },
-    {
-      title: "智能语合成系统",
-      url: "https://voice.sk-cloud.com/",
-      description: "高质量语音合成服务，支持多种语音风格和场景应用",
-      image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/6cbadaa3a48d5fbbc580bb797bb936b406dd8c53?width=464",
     },
     {
       title: "云境Markdown多格式互转软件",
